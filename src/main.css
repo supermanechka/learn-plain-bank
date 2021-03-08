@@ -1,0 +1,187 @@
+main {
+  width: 1150px;
+  background-color: #f3f4f8;
+  font-size: 15px;
+}
+
+main .section-1 {
+  width: 800px;
+  padding-top: 20px;
+  margin-left: 70px;
+}
+
+main header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f4f8;
+}
+
+main .sberbank {
+  width: 25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .sberbank svg {
+  width: 25px;
+  height: 25px;
+  fill: #2a9f3e;
+}
+
+main .sberbank p {
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+main .text p:first-of-type {
+  border-bottom: 3px solid #6bba58;
+}
+
+main .text {
+  width: 75%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .text p {
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+main .exit svg {
+  width: 20px;
+  height: 20px;
+}
+
+main .search {
+  margin-top: 20px;
+  width: 100%;
+}
+
+main .search input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 20px;
+  border: 1px solid #e2e3e7;
+  background-color: #f3f4f8;
+}
+
+main .man-figure {
+  width: 100%;
+  height: 250px;
+  background-image: url('img/man-figure.png');
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: right;
+}
+
+main .cards {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .cards .card-1 {
+  width: 17%;
+  padding: 20px 0 20px 15px;
+  margin-right: 20px;
+  background-color: #ffff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .cards .card-1 p {
+  width: 60%;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+main .cards .card-1 svg {
+  width: 45px;
+  height: 45px;
+  fill: #6bba58;
+}
+
+main .cards .card-2 {
+  width: 17%;
+  padding: 30px 5px 20px 5px;
+  margin-right: 30px;
+  border-radius: 5px;
+  border: 2px dotted #a4a4a4;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+  border-style: dotted;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .cards .card-2 p {
+  width: 40%;
+  margin: 10px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+main .cards .card-2 svg {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+main .cards .card-offer {
+  width: 20%;
+}
+
+main .cards .card-offer p {
+  font-weight: 600;
+}
+
+main .card-details {
+  width: 65%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .card-details svg {
+  width: 17px;
+  height: 17px;
+  fill: #a4a4a4;
+  margin-right: 10px;
+}
+
+main .card-details .auto-payments {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .card-details .details {
+  width: 100%;
+  font-weight: 600;
+}
+
+main .card-details .money-transfers {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

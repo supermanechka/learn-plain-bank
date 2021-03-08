@@ -1,0 +1,155 @@
+aside {
+  width: 300px;
+  background-color: #303030;
+  font-size: 15px;
+}
+
+aside .info {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .info .icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 20px 25px 0;
+  background-color: #434343;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+aside .info .icon:last-of-type {
+  margin: 0 0px 25px 20px;
+}
+
+aside .info svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffff;
+}
+
+aside .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-image: url(img/avatar.jpg);
+  background-size: 100%;
+  object-fit: cover;
+}
+
+aside .info .name {
+  width: 0px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+aside .info .details {
+  margin-top: 1px;
+  font-size: 13px;
+}
+
+aside section {
+  margin-left: 10px;
+}
+
+aside .line-bottom {
+  border-bottom: 1px solid #434343;
+}
+
+aside .subtitle {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 25px;
+}
+
+aside h3 {
+  width: 190px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #a4a4a4;
+}
+
+aside .subtitle .arrow {
+  width: 60px;
+}
+
+aside .subtitle .arrow svg {
+  width: 10px;
+  height: 10px;
+  fill: #a4a4a4;
+}
+
+aside .subtitle .plus {
+  width: 0px;
+}
+
+aside .subtitle .plus svg {
+  width: 15px;
+  height: 15px;
+  fill: #6fb573;
+}
+
+aside .product {
+  height: 60px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+aside .product .icon {
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  fill: #b6c0da;
+}
+
+aside .section:nth-of-type(2) svg {
+  fill: #7acbcb;
+}
+
+aside .name-details-block {
+  margin-left: 10px;
+}
+
+aside .name {
+  width: 180px;
+  color: #ffff;
+}
+
+aside .details {
+  font-size: 10px;
+  color: #a4a4a4;
+}
+
+aside .money {
+  color: #ffff;
+}
+
+aside .more-section {
+  color: #a4a4a4;
+}
+
+aside p {
+  width: 145px;
+  font-size: 10px;
+}
+
+aside .more-section .product {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+aside .more-section {
+  background-color: #292929;
+  padding-left: 10px;
+}
