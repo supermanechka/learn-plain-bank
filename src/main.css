@@ -1,7 +1,11 @@
 main {
   width: 1150px;
-  background-color: #f3f4f8;
   font-size: 15px;
+}
+
+main .color-for-section-1 {
+  width: 1150px;
+  background-color: #f3f4f8;
 }
 
 main .section-1 {
@@ -97,7 +101,6 @@ main .cards .card-1 {
   background-color: #ffff;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
-  background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -124,7 +127,6 @@ main .cards .card-2 {
   border: 2px dotted #a4a4a4;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
   border-style: dotted;
-  background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,4 +186,529 @@ main .card-details .money-transfers {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+main .section-2 {
+  width: 800px;
+  margin: 50px 0 0 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .section-2 .left {
+  width: 55%;
+}
+
+main .section-2 .left .savings-account {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+  padding: 5px 0 40px 15px;
+  background-image: url('img/percantage.png');
+  background-repeat: no-repeat;
+  background-size: 35%;
+  background-position: right;
+}
+
+main .section-2 .left .savings-account p {
+  width: 100%;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+main .section-2 .left .savings-account .details {
+  width: 50%;
+}
+
+main .section-2 .left .savings-account svg {
+  width: 10px;
+  height: 10px;
+  margin-left: 400px;
+  fill: #a4a4a4;
+}
+
+main .section-2 .left .last-operations {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .section-2 .left .last-operations p:first-of-type {
+  width: 55%;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main .section-2 .left .last-operations p:last-of-type {
+  width: 45%;
+  font-size: 12px;
+  font-weight: 600;
+  color: #6bba58;
+}
+
+main .section-2 .last-operations-menu {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #e2e3e7;
+}
+
+main .section-2 .last-operations-menu p {
+  margin-right: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a4a4a4;
+}
+
+main .section-2 .left .operations-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 6px solid #e2e3e7;
+}
+
+main .section-2 .left .operations-details p {
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+main .section-2 .left .information-card {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .section-2 .left .sign {
+  width: 10%;
+  height: 40px;
+  margin-right: 10px;
+  background-color: #656e7b;
+  border-radius: 50%;
+  border: 1px solid #a4a4a4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .section-2 .left .sign svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffff;
+}
+
+main .section-2 .left .name-and-details {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .section-2 .left .name {
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+main .section-2 .left .details {
+  width: 70%;
+}
+
+main .section-2 .left .more-information {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px solid #e2e3e7;
+}
+
+main .section-2 .left .more-information .details:nth-of-type(3) {
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+main .section-2 .left button {
+  width: 100%;
+  height: 45px;
+  margin: 25px 35px 100px 0;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: #ffff;
+  border: 2px solid #e2e3e7;
+  color: #000;
+  outline: none;
+}
+
+main .right {
+  width: 45%;
+  margin-left: 120px;
+}
+
+main .right .finance-budget {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .right .info-budget {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .right .info-budget h3 {
+  margin: 0;
+}
+
+main .right .budget-february {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .right .budget-february p {
+  width: 100%;
+  margin: 0 30px 0 10px;
+}
+
+main .right .budget-february svg {
+  width: 30px;
+  height: 30px;
+  fill: #2a9f3e;
+}
+
+main .right .budget-february .arrow svg {
+  width: 10px;
+  height: 10px;
+}
+
+main .right .expenses-credits {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+main .right .expenses-credits .expenses {
+  width: 35%;
+  margin-right: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+  padding: 10px 30px 10px 10px;
+}
+
+main .right .expenses-credits .rub p {
+  font-weight: 600;
+}
+
+main .right .expenses-credits p {
+  width: 100%;
+  padding-right: 20px;
+  margin: 0 0 5px 0;
+}
+
+main .right .expenses-credits .credits {
+  width: 35%;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
+  padding: 10px 30px 10px 10px;
+}
+
+main .right .diagram {
+  width: 100%;
+  height: 20px;
+  margin: 30px 0 25px 0;
+  border-radius: 5px;
+  background-color: #2a9f3e;
+}
+
+main .right .transactions {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .right .transactions p {
+  width: 75%;
+  margin: 0;
+  color: #a4a4a4;
+}
+
+main .right .transactions svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  fill: #2a9f3e;
+}
+
+main .right .transactions .rub {
+  width: 45%;
+  text-align: end;
+}
+
+main .right .more-budget {
+  border-top: 1px solid #e2e3e7;
+}
+
+main .right .ty-sberbank {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .right .more-budget p {
+  width: 100%;
+  margin: 20px 0;
+}
+
+main .right .more-budget svg {
+  width: 25px;
+  height: 25px;
+  fill: #2a9f3e;
+  margin-right: 10px;
+}
+
+main .right .more-budget .arrow svg {
+  width: 10px;
+  height: 10px;
+  fill: #a4a4a4;
+}
+
+main .right .total-funds {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .right .total-funds svg {
+  fill: #a4a4a4;
+}
+
+main .right .exchange-rates {
+  width: 100%;
+  margin-top: 60px;
+}
+
+main .right .info-details {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .right .info-details svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  fill: #a4a4a4;
+}
+
+main .right .info-details p {
+  width: 100%;
+  font-size: 12px;
+  color: #a4a4a4;
+}
+
+main .right .info-exchange-rates {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main .right .info-exchange-rates p {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+main .right .valute {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .right .info-exchange-rates .rub {
+  text-align: end;
+  margin: 20px 0 0 0;
+}
+
+main .right .info-exchange-rates p:first-of-type {
+  font-size: 13px;
+  color: #a4a4a4;
+}
+
+main .right .info-exchange-rates p:nth-of-type(2) {
+  font-weight: 600;
+}
+
+main .right .info-exchange-rates p:nth-of-type(5) {
+  font-weight: 600;
+}
+
+main .right .info-exchange-rates svg {
+  width: 12px;
+  height: 12px;
+  fill: #2a9f3e;
+}
+
+main .right .another-valute {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main .right .another-valute p {
+  width: 64%;
+  margin: 0;
+  font-size: 13px;
+  color: #5b6b75;
+  border-bottom: 1px dotted #5b6b75;
+}
+
+main .right .another-valute .arrow svg {
+  width: 10px;
+  height: 10px;
+  margin-left: 10px;
+}
+
+main .right .buy-sale p {
+  font-size: 12px;
+  margin-top: 20px;
+  color: #2a9f3e;
+}
+
+main .right .metal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .right .info-exchange-rates:last-of-type p {
+  font-weight: 400;
+}
+
+main .line {
+  width: 100%;
+  border-bottom: 1px solid #e2e3e7;
+}
+
+main .footer {
+  width: 800px;
+  padding-top: 50px;
+  margin: 0 0 30px 70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+main .footer .left-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .footer .left-footer .telephone {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+main .footer .telephone-number:first-of-type {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .footer .telephone-number:last-of-type {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .footer .telephone-number p:first-of-type {
+  margin: 0;
+  font-weight: 600;
+}
+
+main .footer .telephone-number p:last-of-type {
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #5b6b75;
+}
+
+main .footer .right-footer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+main .footer .social-media {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+main .footer .social-media svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  fill: #656e7b;
+}
+
+main .footer .social-media svg:last-of-type {
+  margin-right: 0;
+}
+
+main .footer .right-footer p {
+  font-size: 13px;
+  color: #2a9f3e;
+}
+
+main .footer .left-footer .text-footer {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .footer .left-footer .text-footer p {
+  width: 100%;
+  margin: 5px 0 0 0;
+  font-size: 13px;
+  color: #5b6b75;
+}
+
+main .footer .left-footer .text-footer p:last-of-type {
+  margin-top: 30px;
 }
