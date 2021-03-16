@@ -1,17 +1,15 @@
 main {
-  width: 1150px;
+  width: calc(100% - 330px);
   font-size: 15px;
 }
 
-main .color-for-section-1 {
-  width: 1150px;
-  background-color: #f3f4f8;
-}
-
 main .section-1 {
-  width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-right: calc(100% - 800px - 70px);
   padding-top: 20px;
-  margin-left: 70px;
+  padding-left: 70px;
+  background-color: #f3f4f8;
 }
 
 main header {
@@ -73,6 +71,7 @@ main .search input {
   border-radius: 5px;
   outline: none;
   padding-left: 20px;
+  box-sizing: border-box;
   border: 1px solid #e2e3e7;
   background-color: #f3f4f8;
 }
@@ -189,25 +188,30 @@ main .card-details .money-transfers {
 }
 
 main .section-2 {
-  width: 800px;
-  margin: 50px 0 0 70px;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-right: calc(100% - 800px - 70px);
+  box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 main .section-2 .left {
-  width: 55%;
+  width: calc(100% - 300px - 80px);
 }
 
 main .section-2 .left .savings-account {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
-  padding: 5px 0 40px 15px;
+  padding: 15px;
+  height: 100px;
+  position: relative;
   background-image: url('img/percantage.png');
   background-repeat: no-repeat;
-  background-size: 35%;
-  background-position: right;
+  background-size: 30%;
+  background-position: 85% 40%;
 }
 
 main .section-2 .left .savings-account p {
@@ -223,7 +227,9 @@ main .section-2 .left .savings-account .details {
 main .section-2 .left .savings-account svg {
   width: 10px;
   height: 10px;
-  margin-left: 400px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
   fill: #a4a4a4;
 }
 
@@ -248,7 +254,7 @@ main .section-2 .left .last-operations p:last-of-type {
   color: #6bba58;
 }
 
-main .section-2 .last-operations-menu {
+main .section-2 .tabs {
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -256,11 +262,16 @@ main .section-2 .last-operations-menu {
   border-bottom: 1px solid #e2e3e7;
 }
 
-main .section-2 .last-operations-menu p {
-  margin-right: 20px;
+main .section-2 .tabs p {
+  margin: 0 20px 0 0;
+  padding: 12px 0;
   font-size: 12px;
   font-weight: 600;
   color: #a4a4a4;
+}
+
+main .section-2 .tabs p.active {
+  border-bottom: 3px solid #2a9f3e;
 }
 
 main .section-2 .left .operations-details {
@@ -273,8 +284,8 @@ main .section-2 .left .operations-details {
 
 main .section-2 .left .operations-details p {
   font-weight: 600;
-  margin-top: 20px;
-  margin-bottom: 35px;
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 main .section-2 .left .information-card {
@@ -286,12 +297,11 @@ main .section-2 .left .information-card {
 }
 
 main .section-2 .left .sign {
-  width: 10%;
+  width: 40px;
   height: 40px;
   margin-right: 10px;
   background-color: #656e7b;
   border-radius: 50%;
-  border: 1px solid #a4a4a4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,6 +317,7 @@ main .section-2 .left .name-and-details {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-bottom: 6px;
 }
 
 main .section-2 .left .name {
@@ -319,17 +330,17 @@ main .section-2 .left .details {
 }
 
 main .section-2 .left .more-information {
-  width: 90%;
+  width: calc(100% - 40px - 10px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 36px;
   border-bottom: 1px solid #e2e3e7;
 }
 
-main .section-2 .left .more-information .details:nth-of-type(3) {
-  margin-top: 15px;
-  margin-bottom: 30px;
+main .section-2 .left .information-card:last-of-type .more-information {
+  border: none;
 }
 
 main .section-2 .left button {
@@ -342,11 +353,19 @@ main .section-2 .left button {
   border: 2px solid #e2e3e7;
   color: #000;
   outline: none;
+  cursor: pointer;
+  transition: 0.05s all ease-in-out;
+}
+
+main .section-2 .left button:hover {
+  background-color: #2a9f3e;
+  border: 2px solid #6bba58;
+  color: #fff;
 }
 
 main .right {
-  width: 45%;
-  margin-left: 120px;
+  width: 300px;
+  margin-left: 80px;
 }
 
 main .right .finance-budget {
@@ -379,7 +398,7 @@ main .right .budget-february {
 
 main .right .budget-february p {
   width: 100%;
-  margin: 0 30px 0 10px;
+  padding-left: 10px;
 }
 
 main .right .budget-february svg {
@@ -430,7 +449,37 @@ main .right .diagram {
   height: 20px;
   margin: 30px 0 25px 0;
   border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+}
+
+main .right .diagram div {
+  height: 100%;
+}
+
+main .right .diagram div:nth-of-type(1) {
+  width: 50%;
+  background-color: #3d4898;
+}
+
+main .right .diagram div:nth-of-type(2) {
+  width: 25%;
+  background-color: #dbb32e;
+}
+
+main .right .diagram div:nth-of-type(3) {
+  width: 5%;
   background-color: #2a9f3e;
+}
+
+main .right .diagram div:nth-of-type(4) {
+  width: 15%;
+  background-color: #5463b2;
+}
+
+main .right .diagram div:nth-of-type(5) {
+  width: 5%;
+  background-color: #bb76db;
 }
 
 main .right .transactions {
@@ -442,16 +491,18 @@ main .right .transactions {
 }
 
 main .right .transactions p {
-  width: 75%;
   margin: 0;
   color: #a4a4a4;
+  width: 75%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 main .right .transactions svg {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  fill: #2a9f3e;
 }
 
 main .right .transactions .rub {
@@ -478,7 +529,7 @@ main .right .more-budget p {
 main .right .more-budget svg {
   width: 25px;
   height: 25px;
-  fill: #2a9f3e;
+  fill: #a4a4a4;
   margin-right: 10px;
 }
 
@@ -553,10 +604,7 @@ main .right .info-exchange-rates p:first-of-type {
   color: #a4a4a4;
 }
 
-main .right .info-exchange-rates p:nth-of-type(2) {
-  font-weight: 600;
-}
-
+main .right .info-exchange-rates p:nth-of-type(2),
 main .right .info-exchange-rates p:nth-of-type(5) {
   font-weight: 600;
 }
@@ -576,7 +624,6 @@ main .right .another-valute {
 }
 
 main .right .another-valute p {
-  width: 64%;
   margin: 0;
   font-size: 13px;
   color: #5b6b75;
@@ -611,16 +658,16 @@ main .line {
   border-bottom: 1px solid #e2e3e7;
 }
 
-main .footer {
-  width: 800px;
-  padding-top: 50px;
-  margin: 0 0 30px 70px;
+footer {
+  width: 100%;
+  padding: 50px calc(100% - 800px - 70px) 50px 70px;
+  box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
-main .footer .left-footer {
+footer .left-footer {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -628,14 +675,14 @@ main .footer .left-footer {
   align-items: flex-start;
 }
 
-main .footer .left-footer .telephone {
+footer .left-footer .telephone {
   width: 85%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-main .footer .telephone-number:first-of-type {
+footer .telephone-number:first-of-type {
   width: 35%;
   display: flex;
   flex-direction: column;
@@ -643,7 +690,7 @@ main .footer .telephone-number:first-of-type {
   align-items: flex-start;
 }
 
-main .footer .telephone-number:last-of-type {
+footer .telephone-number:last-of-type {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -651,18 +698,18 @@ main .footer .telephone-number:last-of-type {
   align-items: flex-start;
 }
 
-main .footer .telephone-number p:first-of-type {
+footer .telephone-number p:first-of-type {
   margin: 0;
   font-weight: 600;
 }
 
-main .footer .telephone-number p:last-of-type {
+footer .telephone-number p:last-of-type {
   margin: 5px 0 0 0;
   font-size: 13px;
   color: #5b6b75;
 }
 
-main .footer .right-footer {
+footer .right-footer {
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -670,30 +717,30 @@ main .footer .right-footer {
   align-items: flex-end;
 }
 
-main .footer .social-media {
+footer .social-media {
   width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
 }
 
-main .footer .social-media svg {
+footer .social-media svg {
   width: 25px;
   height: 25px;
   margin-right: 10px;
   fill: #656e7b;
 }
 
-main .footer .social-media svg:last-of-type {
+footer .social-media svg:last-of-type {
   margin-right: 0;
 }
 
-main .footer .right-footer p {
+footer .right-footer p {
   font-size: 13px;
   color: #2a9f3e;
 }
 
-main .footer .left-footer .text-footer {
+footer .left-footer .text-footer {
   width: 100%;
   margin-top: 60px;
   display: flex;
@@ -702,13 +749,13 @@ main .footer .left-footer .text-footer {
   align-items: flex-start;
 }
 
-main .footer .left-footer .text-footer p {
+footer .left-footer .text-footer p {
   width: 100%;
   margin: 5px 0 0 0;
   font-size: 13px;
   color: #5b6b75;
 }
 
-main .footer .left-footer .text-footer p:last-of-type {
+footer .left-footer .text-footer p:last-of-type {
   margin-top: 30px;
 }
