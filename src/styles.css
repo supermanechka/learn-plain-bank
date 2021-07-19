@@ -5,7 +5,14 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+  font-size: 14px;
 }
+
+@media (min-width: 1440px){
+  body { 
+    font-size: 15px;
+  }}
+
 
 .details {
   font-size: 12px;

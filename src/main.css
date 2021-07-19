@@ -1,31 +1,58 @@
 main {
-  width: calc(100% - 330px);
-  font-size: 15px;
+  width: calc(100% - 308px);
 }
+
+@media (min-width: 1024px){
+  main {
+    width: calc(100% - 330px);
+  }}
+
+
+
 
 main .section-1 {
   width: 100%;
+  height: 434px;
   box-sizing: border-box;
   padding-right: calc(100% - 800px - 70px);
   padding-top: 20px;
-  padding-left: 70px;
+  padding-left: 40px;
   background-color: #f3f4f8;
 }
 
+  @media (min-width: 1024px){
+    main .section-1 {
+  padding-left: 70px;
+  height: 409px;
+}}
+
+@media (min-width: 1440px){
+  main .section-1 {
+    height: 430px;
+  }}
+
+
+
+
+
 main header {
-  width: 100%;
+  width: 97%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f3f4f8;
 }
 
+
+
 main .sberbank {
-  width: 25%;
+  width: 35%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+
+
 
 main .sberbank svg {
   width: 25px;
@@ -66,7 +93,7 @@ main .search {
 }
 
 main .search input {
-  width: 100%;
+  width: 96%;
   height: 40px;
   border-radius: 5px;
   outline: none;
@@ -74,16 +101,38 @@ main .search input {
   box-sizing: border-box;
   border: 1px solid #e2e3e7;
   background-color: #f3f4f8;
+  font-size: 15px;
 }
 
+@media (min-width: 1024px){
+  main .search input {
+    width: 97%;
+  }}
+
+  @media (min-width: 1440px){
+    main .search input {
+      width: 100%;  
+    }}
+
+
 main .man-figure {
-  width: 100%;
-  height: 250px;
+  height: 320px;
   background-image: url('img/man-figure.png');
   background-repeat: no-repeat;
-  background-size: 35%;
+  background-size: 37%;
   background-position: right;
 }
+
+@media (min-width: 1024px) {
+main .man-figure {
+  height: 275px;
+}}
+
+@media (min-width: 1440px) {
+  main .man-figure {
+    background-size: 34%;
+  }}
+
 
 main .cards {
   width: 100%;
@@ -119,7 +168,7 @@ main .cards .card-1 svg {
 }
 
 main .cards .card-2 {
-  width: 17%;
+  width: 16%;
   padding: 30px 5px 20px 5px;
   margin-right: 30px;
   border-radius: 5px;
@@ -133,11 +182,25 @@ main .cards .card-2 {
 }
 
 main .cards .card-2 p {
-  width: 40%;
   margin: 10px 0;
   font-weight: 600;
   text-align: center;
+  
 }
+
+
+@media (min-width: 1024px) {
+  main .cards .card-2 p {
+  width: 90%;
+  }}
+
+
+@media (min-width: 1440px) {
+  main .cards .card-2 p {
+  width: 40%;
+  }}
+
+
 
 main .cards .card-2 svg {
   width: 30px;
@@ -146,8 +209,10 @@ main .cards .card-2 svg {
 }
 
 main .cards .card-offer {
-  width: 20%;
+  width: 27%;
 }
+
+
 
 main .cards .card-offer p {
   font-weight: 600;
@@ -157,9 +222,17 @@ main .card-details {
   width: 65%;
   margin-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
+
+@media (min-width: 1024px){
+  main .card-details {
+    width: 47%;
+    justify-content: center;
+  }}
+
+
 
 main .card-details svg {
   width: 17px;
@@ -169,50 +242,99 @@ main .card-details svg {
 }
 
 main .card-details .auto-payments {
-  width: 60%;
+  width: 36%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 1024px){
+  main .card-details .auto-payments {
+    width: 60%;
+  }}
+
 
 main .card-details .details {
   width: 100%;
   font-weight: 600;
 }
 
+@media (min-width: 1024px){
+main .card-offer .details {
+  width: 90%;
+}}
+
 main .card-details .money-transfers {
-  width: 60%;
+  width: 64%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+@media (min-width: 1024px){
+  main .card-details .money-transfers {
+    width: 60%;
+  }}
+
+
 main .section-2 {
-  width: 100%;
-  padding-top: 50px;
-  padding-left: 70px;
-  padding-right: calc(100% - 800px - 70px);
+  width: 95%;
+  padding: 50px 0 0 40px;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
+@media (min-width: 1024px){
+  main .section-2 {
+    width: 97%;
+    padding-left: 70px;
+    padding-right: calc(100% - 800px - 70px);
+  }}
+
+@media (min-width: 1440px){
+    main .section-2 {
+      width: 100%;
+    }}
+
+
 main .section-2 .left {
-  width: calc(100% - 300px - 80px);
+  width: calc(100% - 278px - 40px);
 }
 
+@media (min-width: 1024px){
+  main .section-2 .left {
+    width: calc(100% - 300px - 80px);
+  }}
+
+
 main .section-2 .left .savings-account {
+  width: 100%;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
   padding: 15px;
-  height: 100px;
+  height: 65px;
   position: relative;
   background-image: url('img/percantage.png');
   background-repeat: no-repeat;
+  background-size: 19%;
+  background-position: 95% 78%;
+}
+
+@media (min-width: 1024px){
+  main .section-2 .left .savings-account {
+  height: 70x;
+  background-size: 25%;
+  background-position: 96% 90%;
+}}
+
+@media (min-width: 1440px){
+  main .section-2 .left .savings-account {
+  height: 100px;
   background-size: 30%;
   background-position: 85% 40%;
-}
+}}
 
 main .section-2 .left .savings-account p {
   width: 100%;
@@ -221,8 +343,23 @@ main .section-2 .left .savings-account p {
 }
 
 main .section-2 .left .savings-account .details {
-  width: 50%;
+  width: 90%;
 }
+
+@media (min-width: 1024px){
+  main .section-2 .left .savings-account .details {
+    width: 75%%;
+  }}
+
+  @media (min-width: 1440px){
+    main .section-2 .left .savings-account .details {
+      width: 50%;
+    }}
+  
+  
+
+  
+
 
 main .section-2 .left .savings-account svg {
   width: 10px;
@@ -241,18 +378,35 @@ main .section-2 .left .last-operations {
   align-items: center;
 }
 
+
 main .section-2 .left .last-operations p:first-of-type {
-  width: 55%;
-  font-size: 20px;
+  width: 70%;
   font-weight: 600;
 }
 
+@media (min-width: 1440px){
+  main .section-2 .left .last-operations p:first-of-type {
+    width: 55%;
+    font-size: 20px;
+  }}
+
+
 main .section-2 .left .last-operations p:last-of-type {
-  width: 45%;
-  font-size: 12px;
+  width: 30%;
+  font-size: 10px;
   font-weight: 600;
   color: #6bba58;
 }
+
+
+@media (min-width: 1024px){
+  main .section-2 .left .last-operations p:last-of-type {
+    width: 45%;
+    font-size: 12px;
+  }}
+  
+
+
 
 main .section-2 .tabs {
   width: 100%;
@@ -262,17 +416,60 @@ main .section-2 .tabs {
   border-bottom: 1px solid #e2e3e7;
 }
 
+main .section-2 .tabs svg {
+  display: block;
+  width: 10px;
+  fill: #6bba58;
+  margin-left: 8px;
+
+} 
+
+@media (min-width: 1440px){
+  main .section-2 .tabs svg {
+    display: none;
+  }
+  }
+
 main .section-2 .tabs p {
   margin: 0 20px 0 0;
   padding: 12px 0;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: #a4a4a4;
 }
 
+main .section-2 .tabs p:nth-of-type(3){
+    display: none;
+  }
+  
+@media (min-width: 1440px){
+    main .section-2 .tabs p:nth-of-type(3){
+      display: block;
+    }
+    }
+
+main .section-2 .tabs p:nth-of-type(4){
+      display: none;
+    }
+    
+@media (min-width: 1440px){
+      main .section-2 .tabs p:nth-of-type(4){
+        display: block;
+      }
+      }
+
+ 
+
 main .section-2 .tabs p.active {
   border-bottom: 3px solid #2a9f3e;
 }
+
+@media (min-width: 1024px){
+  main .section-2 .tabs p {
+    font-size: 12px;
+  }}
+
+main .section-2 .tabs p
 
 main .section-2 .left .operations-details {
   display: flex;
@@ -297,8 +494,8 @@ main .section-2 .left .information-card {
 }
 
 main .section-2 .left .sign {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   margin-right: 10px;
   background-color: #656e7b;
   border-radius: 50%;
@@ -307,11 +504,26 @@ main .section-2 .left .sign {
   align-items: center;
 }
 
+
+@media (min-width: 1024px){
+  main .section-2 .left .sign {
+    width: 40px;
+    height: 40px;
+  }}
+
+
 main .section-2 .left .sign svg {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   fill: #ffff;
 }
+
+@media (min-width: 1024px){
+  main .section-2 .left .sign svg {
+    width: 20px;
+    height: 20px;
+  }}
+
 
 main .section-2 .left .name-and-details {
   display: flex;
@@ -326,8 +538,19 @@ main .section-2 .left .name {
 }
 
 main .section-2 .left .details {
-  width: 70%;
+  width: 100%;
 }
+
+@media (min-width: 1440px){
+  main .section-2 .left .details {
+    width: 70%;
+  }}
+  
+  main .section-2 .left .details:nth-of-type(3) {
+    margin-top: 10px;
+  }
+
+
 
 main .section-2 .left .more-information {
   width: calc(100% - 40px - 10px);
@@ -363,10 +586,18 @@ main .section-2 .left button:hover {
   color: #fff;
 }
 
-main .right {
-  width: 300px;
-  margin-left: 80px;
+main .section-2 .right {
+ 
+  margin-left: 65px;
 }
+
+@media (min-width: 1024px){
+  main .section-2 .right {
+    width: 300px;
+    margin-left: 80px;
+  }}
+
+
 
 main .right .finance-budget {
   width: 100%;
@@ -420,12 +651,18 @@ main .right .expenses-credits {
 }
 
 main .right .expenses-credits .expenses {
-  width: 35%;
+  width: 25%;
   margin-right: 20px;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
   padding: 10px 30px 10px 10px;
 }
+
+@media (min-width: 1024px){
+  main .right .expenses-credits .expenses {
+    width: 35%;
+  }}
+
 
 main .right .expenses-credits .rub p {
   font-weight: 600;
@@ -438,11 +675,16 @@ main .right .expenses-credits p {
 }
 
 main .right .expenses-credits .credits {
-  width: 35%;
+  width: 25%;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgb(0 0 0 / 10%);
   padding: 10px 30px 10px 10px;
 }
+
+@media (min-width: 1024px){
+  main .right .expenses-credits .credits {
+    width: 35%;
+  }}
 
 main .right .diagram {
   width: 100%;
@@ -491,6 +733,7 @@ main .right .transactions {
 }
 
 main .right .transactions p {
+  font-size: 15px;
   margin: 0;
   color: #a4a4a4;
   width: 75%;
@@ -498,6 +741,12 @@ main .right .transactions p {
   overflow-x: hidden;
   text-overflow: ellipsis;
 }
+
+@media (min-width: 1024px){
+  main .right .transactions p {
+    font-size: 15px;
+  }}
+
 
 main .right .transactions svg {
   width: 30px;
@@ -659,13 +908,20 @@ main .line {
 }
 
 footer {
-  width: 100%;
+  width: 97%;
   padding: 50px calc(100% - 800px - 70px) 50px 70px;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 }
+
+@media (min-width: 1440px){
+  footer {
+    width: 100%;
+  }}
+
+
 
 footer .left-footer {
   width: 100%;
@@ -676,19 +932,47 @@ footer .left-footer {
 }
 
 footer .left-footer .telephone {
-  width: 85%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
+
+  @media (min-width: 1440px){
+    footer .left-footer .telephone {
+      width: 85%;
+      justify-content: space-between;
+    }}
+  
+
+
+
+
 footer .telephone-number:first-of-type {
-  width: 35%;
+  width: 40%;
+  margin-right: 35px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
+
+
+@media (min-width: 1024px){
+  footer .telephone-number:first-of-type {
+    width: 52%;
+    margin-right: 10px;
+  }}
+
+
+@media (min-width: 1440px){
+  footer .telephone-number:first-of-type {
+    width: 35%;
+    margin-right: 0;
+  }}
+
+ 
 
 footer .telephone-number:last-of-type {
   width: 50%;
@@ -717,6 +1001,12 @@ footer .right-footer {
   align-items: flex-end;
 }
 
+@media (min-width: 1440px){
+  footer .right-footer {
+    width: 25%;
+  }}
+
+
 footer .social-media {
   width: 50%;
   display: flex;
@@ -725,20 +1015,49 @@ footer .social-media {
 }
 
 footer .social-media svg {
-  width: 25px;
   height: 25px;
   margin-right: 10px;
   fill: #656e7b;
 }
+
+
+@media (min-width: 1024px){
+  footer .social-media svg {
+    height: 42px;
+  }}
+
+
+@media (min-width: 1440px){
+  footer .social-media svg {
+    height: 25px;
+    margin-right: 0;
+  }}
+
 
 footer .social-media svg:last-of-type {
   margin-right: 0;
 }
 
 footer .right-footer p {
+  width: 65%;
   font-size: 13px;
   color: #2a9f3e;
 }
+
+@media (min-width: 1024px){
+  footer .right-footer p {
+    width: 80%;
+    margin: 0;
+  }}
+
+
+  @media (min-width: 1440px){
+    footer .right-footer p {
+      width: 100%;
+      margin: auto;
+    }}
+  
+
 
 footer .left-footer .text-footer {
   width: 100%;
